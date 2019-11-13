@@ -15,6 +15,7 @@ def count_words(obj):
 def min_words(obj):
     pass
 
+
 text = repl(input('Your text: ').lower()).split()
 count_words(text)
 print(min_words(text))

@@ -1,7 +1,7 @@
 def repl(obj):
     for_repl = [',', '.', ':', ';', '!', '?']
     for i in range(len(for_repl)):
-        obj.replace(for_repl[i], '')
+        obj = obj.replace(for_repl[i], '')
     return obj.replace('-', ' ')
 
 
@@ -16,7 +16,8 @@ def min_words(obj):
     pass
 
 
-text = repl(input('Your text: ').lower()).split()
+text = repl(input('Your text: ')).lower().split()
+print(text)
 count_words(text)
 print(min_words(text))
 
